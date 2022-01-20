@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "f87d99fc-ea09-46ec-b979-5de7c1854c55",
+		"name": "Vehicle API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "year",
+							"value": "2003",
+							"type": "default"
+						},
+						{
+							"key": "color",
+							"value": "black",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "400000000",
+							"type": "default"
+						},
+						{
+							"key": "machine",
+							"value": "2500",
+							"type": "default"
+						},
+						{
+							"key": "passenger",
+							"value": "9",
+							"type": "default"
+						},
+						{
+							"key": "type",
+							"value": "sedan",
+							"type": "default"
+						},
+						{
+							"key": "stock",
+							"value": "20",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/add-car",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add-car"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Motorcycle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "year",
+							"value": "2009",
+							"type": "default"
+						},
+						{
+							"key": "color",
+							"value": "white",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "15000000",
+							"type": "default"
+						},
+						{
+							"key": "machine",
+							"value": "120",
+							"type": "default"
+						},
+						{
+							"key": "suppension",
+							"value": "spring",
+							"type": "default"
+						},
+						{
+							"key": "transmission",
+							"value": "automatic",
+							"type": "default"
+						},
+						{
+							"key": "stock",
+							"value": "20",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/add-motorcycle",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add-motorcycle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stock Vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/stock-vehicle",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"stock-vehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sell Vehicle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "UmVSUGFZYmRxQStVNjRweHRQZlEzajdiTGxtVy9tVHprcHhyaTM0MVpjNWQ1Y2h4T0x5THN3aXZQNFQ2WjhlZkozek1aV1NSQmdVUEtYT0pKdStjeStoS2N4TXNIVnFVSGFYZTVwTGFHUVVaZmhoS1NHZjIzanpPVkMzRG1GdFE=",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "count",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/sell-vehicle/61e7d0686e15000027004f52",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sell-vehicle",
+						"61e7d0686e15000027004f52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report sold vehicle",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "UmVSUGFZYmRxQStVNjRweHRQZlEzajdiTGxtVy9tVHprcHhyaTM0MVpjNWQ1Y2h4T0x5THN3aXZQNFQ2WjhlZkozek1aV1NSQmdVUEtYT0pKdStjeStoS2N4TXNIVnFVSGFYZTVwTGFHUVVaZmhoS1NHZjIzanpPVkMzRG1GdFE=",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/report-vehicles",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"report-vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "rein",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "reinnatan@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "coba123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
